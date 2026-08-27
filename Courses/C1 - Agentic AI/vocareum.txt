@@ -1,0 +1,17 @@
+Using Vocareum OpenAI API Keys
+Code that uses Vocareum OpenAI API keys must include the appropriate configuration so the requests are routed to the Vocareum server.
+
+The Python code for this configuration depends on the version of the openai package being used. The following examples use a placeholder example API key, which must be replaced with your actual key.
+
+OpenAI Python Package Version 0
+import openai
+openai.api_base = "https://openai.vocareum.com/v1"
+openai.api_key = "voc-00000000000000000000000000000000abcd.12345678"
+OpenAI Python Package Version 1
+from openai import OpenAI
+client = OpenAI(
+    base_url = "https://openai.vocareum.com/v1",
+    api_key = "voc-00000000000000000000000000000000abcd.12345678"
+)
+REST API Calls
+If using curl or another client to access the OpenAI API, build the URLs using https://openai.vocareum.com/v1 in place of https://api.openai.com/v1
