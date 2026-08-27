@@ -1,0 +1,53 @@
+Before You Begin: Prerequisites for This Course
+To be sure you have a smooth and successful learning experience, please review the following prerequisites.
+
+Core Knowledge and Skills:
+
+Basic Python Programming: You should be comfortable with Python syntax, common data types (strings, lists, dictionaries), writing functions, and the general flow of a Python script.
+Jupyter Notebook Proficiency: Familiarity with navigating the Jupyter Notebook interface, executing code cells, and understanding their output is essential.
+Foundational Understanding of LLMs: You should know what a Large Language Model (LLM) is at a conceptual level, including its general capabilities (e.g., text generation, understanding) and the basic idea of using "prompts" to interact with it.
+Recommended Background:
+
+If you are new to Generative AI, LLMs, or the fundamentals of prompting, we strongly recommend first completing Udacity's "Generative AI Nanodegree(opens in a new tab)". This will provide you with the necessary foundational knowledge to get the most out of this material.
+To Be Successful in This Course, You'll Need To:
+
+Be ready to apply your Python skills to write and modify code that interacts with an LLM API within a Jupyter Notebook environment.
+Have a curious and experimental mindset, willing to try different prompt structures and observe their effects.
+While deep expertise isn't required, a basic understanding of how APIs work (i.e., sending a request and receiving a response) will be beneficial.
+Your Learning Environment & Resources
+This course is designed to be hands-on. Here’s what you need to know about the computing environment and resources you'll be using.
+
+Classroom Workspaces:
+
+Throughout this course, you will have access to Udacity's integrated classroom workspaces.
+These workspaces come pre-configured with Jupyter Notebook and Visual Studio Code environments. This means you can write and execute Python code, interact with LLMs, and complete all hands-on labs directly in your web browser. No local software installation is required to use the classroom workspace.
+Cloud Lab Resources (OpenAI API Access):
+
+For exercises that require interaction with Large Language Models, you will be granted access to an OpenAI API Key via our platform.
+This key is linked to a specific budget allocated for your use throughout the course. This allows you to experiment with powerful models without incurring personal costs, within the defined limits.
+Detailed instructions on how to find your API key, understand the budget, and properly configure it within the Jupyter Notebooks will be provided on the next page. Please follow those instructions carefully.
+Optional: Working Locally or With Personal/Company Accounts
+
+While the Udacity classroom workspace provides everything you need, if you prefer to work on your local machine or use your own personal/company OpenAI (or other provider's) accounts, here’s what you'll generally need to set up:
+
+Python Installation:
+Python installed on your system (Python 3.10 or newer is recommended). You can download it from the official website: python.org(opens in a new tab).
+Jupyter Notebook/Lab:
+You'll need to install Jupyter Notebook, JupyterLab, or use Visual Studio Code(opens in a new tab) with the Jupyter Notebook extension. This can typically be done using pip (Python's package installer) after installing Python:
+OpenAI Python Library:
+The course materials use the official OpenAI Python library.
+   pip install openai
+(Use version 1.0.0 or later, as older versions have different syntax.)
+API Key Configuration (Local/Personal Account):
+You will need to obtain your own API key from your chosen LLM provider (e.g., from the OpenAI Platform website(opens in a new tab) if using your personal OpenAI account).
+Be aware that you will be responsible for any costs incurred when using your personal or company API keys.
+To use your key in the lab code (which is often set up to read from an environment variable), you would typically:
+Set an environment variable named OPENAI_API_KEY to your actual key value. The method for setting environment variables differs by operating system.
+Alternatively, you might modify the Python code directly to include your API key, though using environment variables is generally recommended for security:
+# Example for directly inserting your key - use with caution
+# from openai import OpenAI
+# client = OpenAI(api_key="sk-YOUR_ACTUAL_API_KEY_HERE")
+Other Python Libraries:
+If specific labs require additional Python libraries, they will be mentioned in the notebook. You can usually install them using pip:
+pip install <library_name>
+We recommend using the provided classroom workspace for the most straightforward experience, as it's tailored for the course content and includes API access.
